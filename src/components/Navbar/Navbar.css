@@ -1,0 +1,82 @@
+.navbar{
+    width: 100vw;
+    background-color: var(--bg-primary-light);
+    height: 7rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3.2rem;   
+}
+
+/* -----------------  Start Left-Side--------------------- */
+.left-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.left-side>span{
+    font-size: 2.4rem;
+    letter-spacing: 0.005em;
+    color: var(--text-dark);
+    font-family: mulishBold;
+}
+
+.logo{
+     width: 4rem;
+     height: 4rem;
+     background-color: var(--bg-inside);
+     border-radius: 8px;
+}
+
+/* -----------------End Left-Side--------------------- */
+
+
+/* -----------------  Start Right-Side--------------------- */
+
+.right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-right: 6rem;
+}
+
+.right-side>svg{
+    color: var(--text-grey);
+    width: 2rem;
+    height: 2rem;
+    margin-right: 2rem;
+}
+
+.right-side>.admin-picture{
+      width: 4rem;
+      height: 4rem;
+      background-color: var(--bg-inside);
+      border-radius: 100%;  
+      margin-right: .6rem;
+
+}
+
+.right-side>.admin-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side>.admin-name>span:first-child{
+    font-family: mulishBold;
+    font-size: 1.2rem;
+    letter-spacing: 0.005em;
+    color: var(--text-dark);
+}
+
+.right-side>.admin-name>span:last-child{
+    font: mulishRegular;
+    font-size: 1.2rem;
+    letter-spacing: 0.008rem;
+    color: var(--text-grey-light);
+}
+
+/* -----------------  End Right-Side--------------------- */

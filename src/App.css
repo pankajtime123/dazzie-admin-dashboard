@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+
+  font-family: mulishRegular;
+  letter-spacing: .005rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: mulishRegular;
+  src: url("./font/Mulish-Regular.ttf");
+}
+@font-face {
+  font-family: mulishBold;
+  src: url("./font/Mulish-Bold.ttf");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+:root{
+  --border-color: #DBD7F4;
+  --text-grey: #92929D;
+  --text-grey-light:#9A9AB0; 
+  --text-dark:#11142D;
+  --text-light: #42BDA1;
+  --bg-active:#5541D7;
+  --bg-inside:#E2E2EA;
+  --bg-inside-light:#F7F7FC;
+  --bg-primary-light:#FFFFFF;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+html{
+  font-size: 62.5%;
+  font-family: mulishRegular;
+}
+
+body{
+  background: #F5F5F5;
+}
+
+.content-container{
+  width: calc(100% - 6rem);
+  margin: auto;
+  margin-top: 2.4rem;
+}
+
+.btn{
+  outline: none;
+  border: none;
+  background: var(--bg-active);
   color: white;
+  transition: ease-in-out .3s;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover{
+  border: 1px solid var(--bg-active);
+  background: var(--bg-inside-light);
+  color: var(--bg-active);
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* crollbar design  */
+::-webkit-scrollbar
+{
+  border-radius: .8rem;
+    width: 7px;
+    background: var(--bg-inside);
 }
+::-webkit-scrollbar-thumb{
+     border-radius: .8rem;
+     background: var(--bg-active);
+}
+
+
+

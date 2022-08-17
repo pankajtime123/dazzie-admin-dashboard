@@ -1,0 +1,141 @@
+.product-content{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 5.2rem);
+    height: calc(100% - 6rem);
+    border-radius: 0.5rem; 
+    gap: 1.5rem;
+    font-family: mulishRegular;
+    letter-spacing: .005rem;
+    
+}
+
+h2{
+    font-size: 2.4rem;
+    color: var(--text-dark);
+}
+
+.content-main{  
+    width: calc(100% - 5.2rem);
+    background-color: var(--bg-primary-light); 
+    padding-bottom: 1rem ;
+    border-radius: .8rem;
+    overflow: auto; 
+}
+
+
+
+.product-detail{
+    display: flex;
+    flex-direction: column;
+    gap:.8rem;
+ 
+}
+.product-detail>span{
+     font-weight: 700;
+     font-size: 1.6rem;
+     margin-left: 1rem;
+}
+
+.product-detail>input, select{
+       outline: none;
+       border:none;
+       height: 4.6rem;
+       border-radius: .8rem;
+       background: var(--bg-inside-light);
+       border: 1px solid var(--border-color);
+       padding: 0 2rem;
+}
+
+select{
+    color: var(--text-dark) ;
+    appearance: none;
+}
+
+
+select::part(listbox){
+    border-color: red 1px solid;
+}
+
+
+.select-div{
+    position: relative;
+}
+
+.dropdown{
+    position: absolute;
+     top: 65%;
+     right: 15px;
+     content: "";
+     display: block;
+     width: 15px;
+    
+     
+     
+}
+
+.product-detail>textarea{
+    outline: none;
+    border:none;
+    display: block;
+    overflow: hidden;
+    height: 18.6rem;
+    border-radius: .8rem;
+    background: var(--bg-inside-light);
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    resize: none;
+}
+
+.product-picture{
+    display: flex;
+    gap: 1.6rem; 
+}
+
+
+
+
+.product-picture>.img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: .8rem;
+    border: 1px solid var(--border-color);
+    background: var(--bg-inside);
+}
+
+.product-picture>.action-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.action-btn>span{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.action-btn>button{
+    width: 10rem;
+    height: 4rem;
+    border-radius: .8rem;
+    cursor: pointer;
+}
+
+.product-content>div>button{
+     border-radius: .8rem;
+     height: 4rem;
+     width: 8rem;
+     cursor: pointer;
+     margin-right: .5rem;
+}
+
+.btn-cancel{
+    outline: none;
+    color: var(--text-grey);
+    border: none;
+}
+
+.btn-cancel:hover{
+   border: 1px solid var(--border-color);
+}
